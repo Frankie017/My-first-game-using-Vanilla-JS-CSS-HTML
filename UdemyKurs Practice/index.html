@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fc22589f66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="gameOverDark">Game Over</div>
+    <div class="banner" id="banner">
+        <div class="tracker">Only <span id="counter">25</span> left.</div>
+
+        <div class="center">
+            <h1 class="level" id="mainLevelId">Level <span id="level">1</span></h1>
+        </div>
+
+        <div class="welcome"><h1 id="welcome">Welcome to the super game.</h1></div><button id="startBtn">Ready</button>
+        
+        <div class="time"><span id="time">2</span> second left dude! You can do it soldier!</div>
+        <button id="readyBtn">Start</button>
+        <div class="rectangle" id="rectangle"></div>
+    </div>
+
+    <div class="timeForTheRound" id="timeForTheRound">
+        <p id="timeText">Use your keyboard to help this man to get home. Don't let him be eaten by this dangerous creatures.</p>
+        <h1 id="timeToNextRound" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 500px;     color: #ff3e3e;"><span id="nextSeconds">10</span></h1>
+    </div>
+
+    <div class="level2Banner" id="level2Banner">
+
+        <div class="center">
+            <h1 class="level2" id="mainLevelId2">Level <span id="level">2</span></h1>
+        </div>
+
+        <div class="ghosts">
+
+            <i class="fa-solid fa-ghost" id="ghost"><span id="ghostS"></span></i>
+            <i class="fa-solid fa-dragon" id="dragon"><span id="dragonS"></span></i>
+            <i class="fa-solid fa-face-angry" id="angry"><span id="angryS"></span></i>
+
+        </div>
+
+        <div class="shelter"><i class="fa-solid fa-tent" id="tent"></i></div>
+        <div id="shapeRunner"><i class="fa-solid fa-person-running" id="runPerson"></i></div>
+
+    </div>
+
+    <div class="level3Banner" id="level3Banner">
+        <div class="center">
+            <h1 class="level3" id="mainLevelId2">Level <span id="level">3</span></h1>
+        </div>
+
+        <div class="timeForTheRound" id="timeForTheRound">
+            <p>You have to type as fast as possible. 60 seconds will be given to write out the whole text.</p>
+            <h1 id="timeToNextRound" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 500px;     color: #ff3e3e;"><span id="nextSeconds">10</span></h1>
+        </div>
+
+        <h2 id="timerForType">00 : <span id="typeSeconds">40 </span></h2>
+
+        <p id="textToType" oncopy>This is the most badass game, that I've ever played in my life. So boy, I really enjoyed it. I will win this game, however it makes no sense!</p>
+
+        <input type="text" id="input" maxlength="141" onpaste="return false;" ondrop="return false;" autocomplete="off">
+
+    </div>
+
+
+    <div class="lastBanner" id="lastBanner">
+        <div class="congrats">Congrats. You won!</div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
